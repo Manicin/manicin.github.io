@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Kelly Ashie">
+<title>For Aba Nhyira Sekyi Mensah ❤️</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    padding: 40px 20px;
+    background: radial-gradient(circle at top, #1a0000, #000000);
+    color: white;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    overflow: hidden;
+}
+
+/* Main Title */
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4em;
+    margin-bottom: 5px;
+    color: #ffccd5;
+    text-shadow: 0 0 25px rgba(255, 80, 120, 0.7);
+}
+
+/* Her Name (slightly bolder) */
+.subtitle {
+    font-size: 1.4em;
+    font-weight: 500; /* increased from light */
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+/* Poem container */
+.poem-container {
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(to top, transparent 0%, black 10%, black 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+/* Poem scrolling */
+.poem {
+    font-size: 1.35em;
+    line-height: 1.6;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    opacity: 0.95;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    animation: scrollPoem 80s linear forwards;
+}
+
+@keyframes scrollPoem {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-200%); }
+}
+
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.title {
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Glow particles */
+.glow {
+    position: fixed;
+    bottom: -10px;
+    width: 6px;
+    height: 6px;
+    background: radial-gradient(circle, #ff4d6d, transparent);
+    border-radius: 50%;
+    animation: floatUp linear infinite;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    from { transform: translateY(0) scale(0.5); opacity: 0; }
+    20% { opacity: 1; }
+    to { transform: translateY(-110vh) scale(1.2); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_5f6b3b6c67.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+    <div class="title">
+        <h1>Happy Valentine’s</h1>
+        <div class="subtitle">Aba Nhyira Sekyi Mensah</div>
+    </div>
+
+    <div class="poem-container">
+        <div class="poem">
+            <strong>Time.</strong><br><br>
+
+            Was it<br>
+            a temporal anomaly,<br>
+            or caused by the karmic way?<br><br>
+
+            I forestall the belief<br>
+            that anything I’ve created<br>
+            could cause an effect this way.<br><br>
+
+            Divine intervention must’ve swayed some change,<br>
+            for our meeting must’ve been<br>
+            a string of fate.<br><br>
+
+            So be it a harmonic convergence<br>
+            or a grand happenstance —<br>
+            somehow, and in some way,<br>
+            we met in that instance.<br><br>
+
+            This may be the day the stars aligned<br>
+            and the world decided a need to show it.<br>
+            But I have never needed a reason to own it.<br><br>
+
+            I bind my affection to these strings of code —<br>
+            my convoluted way of saying:<br><br>
+
+            <strong>I love you.</strong>
+        </div>
+    </div>
+</div>
+
+<script>
+for (let i = 0; i < 35; i++) {
+    let glow = document.createElement("div");
+    glow.className = "glow";
+    glow.style.left = Math.random() * 100 + "vw";
+    glow.style.animationDuration = (6 + Math.random() * 6) + "s";
+    glow.style.animationDelay = Math.random() * 5 + "s";
+    document.body.appendChild(glow);
+}
+</script>
+
+</body>
+</html>
